@@ -66,14 +66,14 @@ header .basket {
     line-height: 22px;
     color: #333333;
     text-decoration: none;
-}
-
-header .basket span {
-    color: #1a9547;
     display: inline-block;
     padding-left: 28px;
     background-repeat: no-repeat;
     background-position: left center;
+}
+
+header .basket span {
+    color: #1a9547;
 }
 
 header [class*="icon"] {
@@ -209,7 +209,7 @@ header .phone [class*="icon"] {
 .socialItem {
     background-size: cover;
     background-repeat: no-repeat;
-    background-clip: center;
+    background-position: center;
 }
 .tabs li a {
     font-size: 14px;
@@ -242,4 +242,48 @@ footer a {
 
 footer a.socLink {
     font-size: 21px;
+}
+
+.breadcrumbs {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    margin-bottom: 25px;
+}
+
+.content h1 {
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    margin: 0 0 50px;
+}
+
+.content h2 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.content span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+
+.foto {
+    height: 210px;
+    width: 980px;
+    background-color: #b3b3b3;
+    margin: 20px 0 20px;
+}
+
+.content p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+.content a {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
 }
