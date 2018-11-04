@@ -27,12 +27,35 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
 .clear::after {
     content: '';
     display: block;
     clear: both;
 }
 
+.tabs li {
+    padding: 0px 15px;
+    display: inline-block;
+}
 header .table {
     display: table;
 
@@ -116,8 +139,26 @@ header .login [class*="icon"] {
 header .phone [class*="icon"] {
     font-size: 20px;
 }
+.banner .sale {
+    width: 305px;
+    height: 360px;
+}
 
+.banner .slider {
+    width: 640px;
+    height: 360px;
+}
 
+.banner>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
 .advantages .item span {
     font-size: 14px;
     font-weight: bold;
@@ -228,6 +269,10 @@ header .phone [class*="icon"] {
 .status.new {
     background-color: #78ec71;
 }
+
+.card {
+    border-bottom: 1px solid #e4e4e4;
+}
 .card .img {
     width: 220px;
     height: 220px;
@@ -291,6 +336,17 @@ header .phone [class*="icon"] {
     float: right;
 }
 
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.widgets .wrap {
+    display: flex;
+    justify-content: space-between;
+}
 .widgets h1 {
     font-size: 18px;
     font-weight: 600;
