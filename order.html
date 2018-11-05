@@ -8,6 +8,177 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+    <div class="container">
+        <div class="table">
+            <div class="left">
+                <a href="#" class="login">
+                    <span class="icon-user"></span>
+                    Войти в личный кабинет
+                </a>
+                <ul class="menu">
+                    <li><a href="#">Оптовикам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">О мастерской</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="logo invisLink">
+                <img src="img/png/logo.png" alt="logo">
+                <a href="#">Главная</a>
+            </div>
+            <div class="right">
+                <a href="tel:8(495)648-8-456" class="phone">
+                    <span class="icon-phone"></span>
+                    8 (495) 648-8-456
+                </a>
+                <a href="#" class="callback">Не дозвонились?</a>
+                <p class="timing">Мы работаем пн-пт
+                    10:00 - 19:00</p>
+                <a href="#" class="basket" style="background-image: url(img/png/basket.png)">
+                    товаров<span> 5 </span>на сумму<span> 2550 </span>
+                </a>
+            </div>
+        </div>
 
+    </div>
+</header>
+<div class="container">
+    <div class="content">
+        <div class="order">
+            <ul class="breadcrumbs">
+                <li><a href="">Главная/</a></li>
+                <li><a href="">Корзина/</a></li>
+                <li>Оформление заказа</li>
+            </ul>
+            <h1>Оформление заказа</h1>
+            <form action="#">
+                <div class="city">
+                    <label for="city">Выбор города</label>
+                    <select name="city" id="city">
+                        <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
+                        <option value="Санкт-Петербург, Ленинградская обл., Россия">Санкт-Петербург, Ленинградская обл.,
+                            Россия
+                        </option>
+                    </select>
+                </div>
+                <div class="delivery">
+                    <h2>Способ доставки</h2>
+                    <ul>
+                        <li>
+                            <label for="courierDelivery">Доставка курьерской службой по Москве и МО (IM Logistics) 0
+                                р.</label>
+                            <label for="courierDelivery">Заказ оформленный:
+                                - до 16:00 будет доставлен на следующий рабочий день;
+                                - после 16:00 будет доставлен через один рабочий день;</label>
+                            <input type="radio" name="courierDelivery" id="courierDelivery">
+                        </li>
+                        <li>
+                            <label for="exspressDelivery">Экспресс-доставка 450 р.</label>
+                            <label for="exspressDelivery">День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В
+                                пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор"
+                                при данном типе доставки недоступна.</label>
+                            <input type="radio" name="exspressDelivery" id="exspressDelivery">
+                        </li>
+                        <li>
+                            <label for="giftDelivery">Доставить в подарок 450 р.</label>
+                            <label for="giftDelivery">День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах
+                                МКАД.
+                                Доставка осуществляется только по предоплате. Дополнительная услуга — подарочная
+                                упаковка</label>
+                            <input type="radio" name="giftDelivery" id="giftDelivery">
+                        </li>
+                        <li>
+                            <label for="pickupDelivery">Самовывоз из пункта выдачи заказов 0 р.</label>
+                            <label for="pickupDelivery">1-2 рабочих дня.</label>
+                            <input type="radio" name="pickupDelivery" id="pickupDelivery">
+                        </li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h2>Адрес доставки</h2>
+                    <label for="street">Улица<span>*</span></label>
+                    <input type="text" name="street" id="street">
+                    <label for="district">Район<span>*</span></label>
+                    <input type="text" name="district" id="district">
+                    <label for="house">Дом<span>*</span></label>
+                    <input type="text" name="house" id="house">
+                    <label for="bilding">Корпус<span>*</span></label>
+                    <input type="text" name="bilding" id="bilding">
+                    <label for="apartment">Квартира/Офис<span>*</span></label>
+                    <input type="text" name="apartment" id="apartment">
+                    <label for="additionally">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                    <textarea name="additionally" id="additionally"></textarea>
+                </div>
+                <div class="payment">
+                    <h2>Способ оплаты</h2>
+                    <ul>
+                        <li>
+                            <label for="cash">Оплата при получении</label>
+                            <label for="cash">Вы сможете оплатить стоимость заказа наличными
+                                при получении заказа от курьера.</label>
+                            <input type="radio" name="cash" id="cash">
+                        </li>
+                        <li>
+                            <label for="cart">Оплата электронным способом (Робокасса)</label>
+                            <label for="cart">Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</label>
+                            <input type="radio" name="cart" id="cart">
+                        </li>
+                    </ul>
+                </div>
+                <div class="dataName">
+                    <h2>Ваши данные</h2>
+                    <label for="name">Имя<span>*</span></label>
+                    <input type="text" name="name" id="name">
+                    <label for="mail">Электронная почта<span>*</span></label>
+                    <input type="text" name="mail" id="mail">
+                    <label for="phone">Номер телефона<span>*</span></label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <input type="submit" value="Продолжить">
+            </form>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footFrap clear">
+            <ul class="footMenu clear">
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Корпоративным клиентам </a></li>
+                        <li><a href="#">Войти в личный кабинет</a></li>
+                    </ul>
+                </li>
+                <li class="col">
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О мастерской</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="contacts">
+                <a href="tel:8(945)648-8-456">8 (945) 648-8-456</a>
+                <a href="mailto:ecocheloveki@gmail.com">ecocheloveki@gmail.com</a>
+                <span>пн-пт 10:00 - 19:00</span>
+                <span>Ищите нас здесь</span>
+                <a href="" class="icon-vk socLink"></a>
+                <a href="" class="icon-twitter socLink"></a>
+                <a href="" class="icon-facebook socLink"></a>
+            </div>
+            <div class="copyright">
+                <span>&copy; 2011-2014 Экочеловечки</span>
+                <span>Все права защищены</span>
+                <span>Все цены указаны в рублях</span>
+                <span>Разработка <a href="">«Биат»</a></span>
+            </div>
+
+        </div>
+    </div>
+</footer>
 </body>
 </html>
