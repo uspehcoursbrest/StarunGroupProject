@@ -46,101 +46,119 @@
 </header>
 <div class="container">
     <div class="content">
-        <div class="order">
-            <ul class="breadcrumbs">
-                <li><a href="">Главная/</a></li>
-                <li><a href="">Корзина/</a></li>
-                <li>Оформление заказа</li>
-            </ul>
-            <h1>Оформление заказа</h1>
-            <form action="#">
-                <div class="city">
+        <ul class="breadcrumbs">
+            <li><a href="">Главная/</a></li>
+            <li><a href="">Корзина/</a></li>
+            <li>Оформление заказа</li>
+        </ul>
+        <h2>Оформление заказа</h2>
+        <form action="#">
+            <div class="formBlock">
+                <div class="selectB1">
                     <label for="city">Выбор города</label>
                     <select name="city" id="city">
                         <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
-                        <option value="Санкт-Петербург, Ленинградская обл., Россия">Санкт-Петербург, Ленинградская обл.,
-                            Россия
-                        </option>
                     </select>
                 </div>
-                <div class="delivery">
-                    <h2>Способ доставки</h2>
-                    <ul>
-                        <li>
-                            <label for="courierDelivery">Доставка курьерской службой по Москве и МО (IM Logistics) 0
-                                р.</label>
-                            <label for="courierDelivery">Заказ оформленный:
-                                - до 16:00 будет доставлен на следующий рабочий день;
-                                - после 16:00 будет доставлен через один рабочий день;</label>
-                            <input type="radio" name="courierDelivery" id="courierDelivery">
-                        </li>
-                        <li>
-                            <label for="exspressDelivery">Экспресс-доставка 450 р.</label>
-                            <label for="exspressDelivery">День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В
-                                пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор"
-                                при данном типе доставки недоступна.</label>
-                            <input type="radio" name="exspressDelivery" id="exspressDelivery">
-                        </li>
-                        <li>
-                            <label for="giftDelivery">Доставить в подарок 450 р.</label>
-                            <label for="giftDelivery">День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах
-                                МКАД.
-                                Доставка осуществляется только по предоплате. Дополнительная услуга — подарочная
-                                упаковка</label>
-                            <input type="radio" name="giftDelivery" id="giftDelivery">
-                        </li>
-                        <li>
-                            <label for="pickupDelivery">Самовывоз из пункта выдачи заказов 0 р.</label>
-                            <label for="pickupDelivery">1-2 рабочих дня.</label>
-                            <input type="radio" name="pickupDelivery" id="pickupDelivery">
-                        </li>
-                    </ul>
-                </div>
-                <div class="address">
-                    <h2>Адрес доставки</h2>
+            </div>
+
+            <div class="formBlock">
+                <span>Способ доставки</span>
+                <ul class="orderList">
+                    <li>
+                        <label for="delivery1">Доставка курьерской службой по Москве и МО (IM Logistics) 0
+                            р.</label>
+                        <p>Заказ оформленный:<br>
+                            - до 16:00 будет доставлен на следующий рабочий день;<br>
+                            - после 16:00 будет доставлен через один рабочий день;</p>
+                        <input class="radioBtn" type="radio" name="delivery" id="delivery1" checked>
+                    </li>
+                    <li>
+                        <label for="delivery2">Экспресс-доставка 450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В
+                        пределах МКАД. Доставка осуществляется только по предоплате. Услуга "товары на выбор"
+                        при данном типе доставки недоступна.</p>
+                        <input class="radioBtn" type="radio" name="delivery" id="delivery2">
+                    </li>
+                    <li>
+                        <label for="delivery3">Доставить в подарок 450 р.</label>
+                        <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах
+                        МКАД.
+                        Доставка осуществляется только по предоплате.</p>
+                        <span class="additionalService">Дополнительная услуга — подарочная
+                            упаковка</span>
+                        <input class="radioBtn" type="radio" name="delivery" id="delivery3">
+                    </li>
+                    <li>
+                        <label for="pickupDelivery">Самовывоз из пункта выдачи заказов 0 р.</label>
+                        <label for="pickupDelivery">1-2 рабочих дня.</label>
+                        <input type="radio" name="pickupDelivery" id="pickupDelivery">
+                    </li>
+                </ul>
+            </div>
+            <div class="formBlock">
+                <span>Адрес доставки</span>
+                <div>
                     <label for="street">Улица<span>*</span></label>
                     <input type="text" name="street" id="street">
+                </div>
+                <div>
                     <label for="district">Район<span>*</span></label>
                     <input type="text" name="district" id="district">
+                </div>
+                <div>
                     <label for="house">Дом<span>*</span></label>
                     <input type="text" name="house" id="house">
+                </div>
+                <div>
                     <label for="bilding">Корпус<span>*</span></label>
                     <input type="text" name="bilding" id="bilding">
-                    <label for="apartment">Квартира/Офис<span>*</span></label>
-                    <input type="text" name="apartment" id="apartment">
-                    <label for="additionally">Дополнительно (номер домофона, номер офиса и тд.)</label>
-                    <textarea name="additionally" id="additionally"></textarea>
                 </div>
-                <div class="payment">
-                    <h2>Способ оплаты</h2>
-                    <ul>
-                        <li>
-                            <label for="cash">Оплата при получении</label>
-                            <label for="cash">Вы сможете оплатить стоимость заказа наличными
-                                при получении заказа от курьера.</label>
-                            <input type="radio" name="cash" id="cash">
-                        </li>
-                        <li>
-                            <label for="cart">Оплата электронным способом (Робокасса)</label>
-                            <label for="cart">Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</label>
-                            <input type="radio" name="cart" id="cart">
-                        </li>
-                    </ul>
+                <div>
+                    <label for="flat">Квартира/Офис<span>*</span></label>
+                    <input type="text" name="flat" id="flat">
                 </div>
-                <div class="dataName">
-                    <h2>Ваши данные</h2>
+                <div>
+                    <label for="message">Дополнительно (номер домофона, номер офиса и тд.)</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </div>
+            <div class="formBlock">
+                <span>Способ оплаты</span>
+                <ul class="orderList">
+                    <li>
+                        <label for="pay1">Оплата при получении</label>
+                        <p>Вы сможете оплатить стоимость заказа наличными
+                            при получении заказа от курьера.</p>
+                        <input class="radioBtn" type="radio" name="pay" id="pay1">
+                    </li>
+                    <li>
+                        <label for="pay2">Оплата электронным способом (Робокасса)</label>
+                        <p>Банковская карта, WebMoney, Яндекс Деньги, QIWI и т.д.</p>
+                        <input class="radioBtn" type="radio" name="pay" id="pay2">
+                    </li>
+                </ul>
+            </div>
+            <div class="formBlock">
+                <span>Ваши данные</span>
+                <div>
                     <label for="name">Имя<span>*</span></label>
                     <input type="text" name="name" id="name">
-                    <label for="mail">Электронная почта<span>*</span></label>
-                    <input type="text" name="mail" id="mail">
-                    <label for="phone">Номер телефона<span>*</span></label>
-                    <input type="text" name="phone" id="phone">
                 </div>
-                <input type="submit" value="Продолжить">
-            </form>
-        </div>
+                <div>
+                    <label for="mail">Электронная почта<span>&#8727;</span></label>
+                    <input type="text" name="mail" id="mail">
+                </div>
+                <div>
+                    <label for="telephone">Номер телефона<span>&#8727;</span></label>
+                    <input type="text" name="telephone" id="telephone">
+                </div>
+            </div>
+            <button>Продолжить</button>
+        </form>
     </div>
 </div>
+
 <footer>
     <div class="container">
         <div class="footFrap clear">
