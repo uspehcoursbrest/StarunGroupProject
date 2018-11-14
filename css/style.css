@@ -281,6 +281,14 @@ header .phone [class*="icon"] {
     text-decoration: none;
     color: #666666;
 }
+.filter{
+    position: relative;
+}
+.filter .view{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
 
 .card {
     position: relative;
@@ -625,5 +633,37 @@ radioBtn:checked + label::after {
 @media (max-width: 767px) {
     .container {
         width: 100%;
+    }
+    .banner .sale{
+        height: 260px;
+        width: 220px;
+    }
+    .banner .slider {
+        height: 260px;
+        width: 460px;
+    }
+    .subscribe {
+        width: 100%;
+    }
+    .subscribe .wrap {
+        width: 270px;
+    }
+
+    .advantages {
+        width: 100%;
+    }
+
+    .widgets {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card {
+        flex: 1 0 220px;
+
     }
 }
