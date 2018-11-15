@@ -165,6 +165,8 @@ header .login [class*="icon"] {
 header .phone [class*="icon"] {
     font-size: 20px;
 }
+
+
 .banner .sale {
     width: 305px;
     height: 360px;
@@ -590,6 +592,84 @@ radioBtn:checked + label::after {
 }
 
 /*----------------------------адаптив----------------------------------*/
+header.mobile {
+    display: none;
+    position: relative;
+    padding: 18px 0;
+    background-color: #63ba49;
+}
+
+.filterMobile {
+    display: none;
+    position: relative;
+    border-color: #bebebe;
+    padding: 20px;
+}
+
+.filterMobile .view{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px 0;
+}
+
+header.mobile .menuMobile{
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menuMobile:before{
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: -12px;
+    left: 0;
+}
+.menuMobile:after{
+    content: '';
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+
+.logoMobile{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 180px;
+    height: 125px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+}
+.basketMobile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+
+}
+
+.mobileSub{
+    display: none;
+    margin-bottom: 50px;
+    padding: 0 5px;
+    text-align: center;
+}
 
 @media (max-width: 1199px) {
     .container {
@@ -634,36 +714,37 @@ radioBtn:checked + label::after {
     .container {
         width: 100%;
     }
-    .banner .sale{
-        height: 260px;
-        width: 220px;
-    }
-    .banner .slider {
-        height: 260px;
-        width: 460px;
-    }
-    .subscribe {
-        width: 100%;
-    }
-    .subscribe .wrap {
-        width: 270px;
+
+    header.mobile {
+        display: block;
     }
 
-    .advantages {
-        width: 100%;
-    }
-
-    .widgets {
+    .banner .sale,
+    .banner .slider,
+    .subscribe,
+    .advantages,
+    .widgets,
+    header .table,
+    .filter,
+    .tabs,
+    .accordion{
         display: none;
     }
+.filterMobile{
+    display: block;
+}
 
     .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .card {
-        flex: 1 0 220px;
 
+    .card {
+        flex: 1 0 270px;
     }
+    .mobileSub{
+        display: block;
+    }
+
 }
