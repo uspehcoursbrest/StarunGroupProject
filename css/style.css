@@ -591,6 +591,165 @@ radioBtn:checked + label::after {
     cursor: pointer;
 }
 
+.breadcrumbs a{
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.breadcrumbs li{
+    float: left;
+
+}
+
+.selectB1 label{
+    float: left;
+    width: 120px;
+}
+.selectB1 option{
+    float: left;
+    width: 200px;
+}
+
+.content h2{
+    font-size: 25px;
+    line-height: 22px;
+    color: #333333;
+    display: block;
+}
+
+.selectBl label{
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+.selectBl option{
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+.orderList label{
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.orderList li{
+    padding: 10px 0px;
+}
+.formBlock .text{
+    font-size: 15px;
+    line-height: 22px;
+    color: #666666;
+}
+.orderList p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+.orderList .additionalService{
+    font-size: 12px;
+    line-height: 18px;
+    color: #f26522;
+}
+.content button{
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #f26522;
+    width: 190px;
+    height: 30px;
+    border: none;
+}
+
+.formBlock .text{
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+.formBlock label{
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+
+}
+.formBlock input{
+    display: block;
+    border: 1px solid #d6d6d6;
+    width: 190px;
+}
+.formBlock textarea{
+    display: block;
+    border: 1px solid #d6d6d6;
+}
+.formBlock span{
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #ed1c24;
+}
+.formBlock div{
+    display: inline-block;
+    padding: 10px 330px 10px 0;
+
+}
+.formBlock .text{
+    display: inline-block;
+    padding-right: 400px;
+}
+.clientWrap .left p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.clientWrap .left label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+.formClient {
+    height: 620px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+
+.formClient input{
+    width: 280px;
+    border: 1px solid #d6d6d6;
+    display: block;
+}
+.formClient textarea{
+    width: 280px;
+    border: 1px solid #d6d6d6;
+    display: block;
+    height: 120px;
+}
+
+.formClient label{
+    font-style: italic;
+    font-size: 13px;
+    color: #666666;
+}
+
+.cfix span:nth-child(1){
+    font-style: normal;
+    font-size: 13px;
+}
+.cfix span:nth-child(3){
+    font-style: normal;
+    font-size: 11px;
+    color: #999999;
+}
+
+
 /*----------------------------адаптив----------------------------------*/
 header.mobile {
     display: none;
