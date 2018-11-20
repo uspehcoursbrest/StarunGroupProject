@@ -172,10 +172,6 @@ header .phone [class*="icon"] {
     height: 360px;
 }
 
-.banner .slider {
-    width: 640px;
-    height: 360px;
-}
 
 .banner>div {
     background-repeat: no-repeat;
@@ -186,6 +182,32 @@ header .phone [class*="icon"] {
 .banner {
     display: flex;
     justify-content: space-between;
+}
+.banner .owlBanner {
+    width: 640px;
+    height: 360px;
+    position: relative;
+}
+
+.owl-carousel .item{
+    height: 350px;
+}
+
+#customDots{
+    display: table;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+}
+#customDots .owl-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: table-cell;
+    margin-rigth: 10px;
+
 }
 .advantages .item span {
     font-size: 14px;

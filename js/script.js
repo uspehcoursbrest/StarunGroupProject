@@ -31,5 +31,15 @@ $(document).ready(function () {
             scrollTop: 0
         }, 500);
         return false;
+    });
+
+    $(".slider").owlCarousel({
+        dots: true,
+        loop: true,
+        items: 3,
+        dotsContainer: #customDots
+
     })
+
+
 })
