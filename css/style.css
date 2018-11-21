@@ -171,7 +171,10 @@ header .phone [class*="icon"] {
     width: 305px;
     height: 360px;
 }
-
+.banner .slider {
+     width: 640px;
+     height: 360px;
+}
 
 .banner>div {
     background-repeat: no-repeat;
@@ -183,31 +186,36 @@ header .phone [class*="icon"] {
     display: flex;
     justify-content: space-between;
 }
-.banner .owlBanner {
-    width: 640px;
-    height: 360px;
+.banner .sliderWrap {
+    float: left;
     position: relative;
+    width: 640px;
+    z-index: -1;
 }
 
-.owl-carousel .item{
-    height: 350px;
+.slider .item {
+    height: 360px;
+    background-size: cover;
+    background-position: center;
 }
-
-#customDots{
-    display: table;
+.sliderWrap .dots{
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
+    bottom: 10px;
+    right: 20px;
+    z-index: 1;
 }
-#customDots .owl-dot{
-    width: 10px;
-    height: 10px;
+.sliderWrap .dots button{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
-    background-color: #fff;
-    display: table-cell;
-    margin-rigth: 10px;
+    margin-left: 20px;
+}
 
+.sliderWrap .dots .active{
+    background-color: #fff;
 }
 .advantages .item span {
     font-size: 14px;

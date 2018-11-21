@@ -33,11 +33,12 @@ $(document).ready(function () {
         return false;
     });
 
-    $(".slider").owlCarousel({
-        dots: true,
+    var slider = $(".slider");
+    slider.owlCarousel({
         loop: true,
-        items: 3,
-        dotsContainer: #customDots
+        items: 1,
+        dotsContainer: "#customDots",
+        autoplay: true
 
     })
 
