@@ -40,7 +40,12 @@ $(document).ready(function () {
         dotsContainer: "#customDots",
         autoplay: true
 
-    })
+    });
 
+    $( "#tabs" ).tabs({
+        active:0
+    });
+
+    $("select").selectric();
 
 })
